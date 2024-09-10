@@ -28,6 +28,9 @@ body, html {
     color: rgba(255, 255, 255, 0.838) !important;
     font-family: 'EB Garamond', Garamond, serif; /* Garamond in the navbar */
 }
+.navbar a:hover {
+    color: #c2ba8dbc; /* Gold color on hover */
+}
 
 .navbar .navbar-toggler-icon {
     background-color: rgba(112, 15, 15, 0.763);
@@ -47,48 +50,15 @@ body, html {
     object-fit: contain; /* Maintain aspect ratio */
 }
 
-/* About Section Styles */
-.about-bg {
-    background-image: url('about.jpg'); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh; /* Full height for the viewport */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-    z-index: -1;
-}
-
-.about-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Center the content vertically and horizontally */
-    width: 100%;
-    padding: 20px;
-}
 
 .content-wrapper {
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
-    padding: 40px;
+    max-width: 700px; /* Adjust the max-width as needed */
+    padding: 20px;
+    background-image: url('about.jpg');
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
-    max-width: 800px;
-    text-align: center; /* Center text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.about-section h1, .about-section h2, .about-section h3 {
-    color: #333;
-}
-
-.about-section p, .about-section ul {
-    color: #555;
-    font-size: 1.25rem;
-    margin: 20px 0;
-}
 
 /* Utility Classes */
 .text-center {
@@ -116,17 +86,9 @@ body, html {
     width: 100%;
     text-align: center;
 }
-.about-section
-{
-    flex: 1;
-}
 .footer p {
     margin: 0;
     color: #02070c6f; /* Light text color for contrast */
-}
-
-.footer a {
-    color: #023d50;
 }
 
 .footer a:hover {
@@ -170,7 +132,7 @@ body.fade-out-loader #loader {
     display: none;
 }
 .search-bar {
-    border-radius: 12px; /* Rounded square corners */
+    border-radius: 10px; /* Rounded square corners */
     border: 0px  #ffffffbb; /* Adjust border color */
     padding: 2px 2px;
 }
@@ -178,9 +140,38 @@ body.fade-out-loader #loader {
     background-color: rgba(147, 24, 26, 0.379); /* Match your theme color */
     color: white;
     border: none;
-    border-radius: 12px; /* Rounded square button */
-    padding: 4px 8px;
+    border-radius: 10px; /* Rounded square button */
+    padding: 2px 2px;
 }
 .navbar-nav {
     margin-right: 15px;
+}
+/* Vertical Social Media Icons */
+.vertical-social-icons {
+    position: fixed; /* Fixed position to keep it in view */
+    top: 50%;
+    left: 20px; /* Adjust as per your design */
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.vertical-social-icons ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.vertical-social-icons ul li {
+    margin: 5px 0; /* Spacing between icons */
+}
+
+.vertical-social-icons ul li a {
+    font-size: 20px; /* Size of social media icons */
+    color: #F0F8FF; /* Light color for icons */
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s;
+}
+
+.vertical-social-icons ul li a:hover {
+    color: #c2ba8dbc; /* Gold color on hover */
 }
