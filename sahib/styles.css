@@ -81,7 +81,7 @@ body, html {
 .footer {
     background-image: url('about.jpg');
     padding: 20px 0;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -174,4 +174,12 @@ body.fade-out-loader #loader {
 
 .vertical-social-icons ul li a:hover {
     color: #c2ba8dbc; /* Gold color on hover */
+}
+.box {
+    background-image: url('about.jpg');
+}
+.about-box {
+    max-width: 800px; /* Adjust width if necessary */
+    background-image: url('about.jpg');
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a slight shadow */
 }
