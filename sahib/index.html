@@ -6,7 +6,7 @@
     <title>Sahib's</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="logo1.png" type="image/x-icon">
+    <link rel="icon" href="logo2.png" type="image/x-icon">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -43,7 +43,7 @@
                     <a class="nav-link" href="sample.html">Product</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About us</a>
+                    <a class="nav-link" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
@@ -53,14 +53,15 @@
                 <input class="form-control search-bar" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn search-button ms-2" type="submit"><i class="bi bi-search"></i></button>
             </form>
-            
         </div>
     </div>
 </nav>
 
+<!-- Logo Display -->
 <div class="logo-container">
     <img src="logo1.png" alt="Logo">
 </div>
+
 <!-- Social Media Icons -->
 <div class="vertical-social-icons">
     <ul>
@@ -72,8 +73,117 @@
     </ul>
 </div>
 
+<!-- Product Section -->
+<section id="product-section" class="text-center bg-light">
+    <div class="container">
+        <h2 class="section-title"><b>Our Products</b></h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 product-item">
+                <div class="product-img">
+                    <img src="p1.jpg" alt="Jeerakasala Rice"> <!-- Replace with your image path -->
+                </div>
+                <h3 class="product-name"><b>Jeerakasala Rice</b></h3>
+                <p class="product-description">It is a fantastic product that meets all your needs.</p>
+                <p class="product-price">$99.99</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4 product-item">
+                <div class="product-img">
+                    <img src="p2.jpg" alt="Product 2"> <!-- Replace with your image path -->
+                </div>
+                <h3 class="product-name"><b>Product 2</b></h3>
+                <p class="product-description">Description of Product 2. This product is top-rated and highly recommended.</p>
+                <p class="product-price">$149.99</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4 product-item">
+                <div class="product-img">
+                    <img src="p3.jpg" alt="Product 3"> <!-- Replace with your image path -->
+                </div>
+                <h3 class="product-name"><b>Product 3</b></h3>
+                <p class="product-description">Description of Product 3. A great choice for those looking for quality and affordability.</p>
+                <p class="product-price">$79.99</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<div id="about-section" class="container-fluid py-5 d-flex flex-column align-items-center">
+    <div class="content-wrapper text-center">
+        <h1 class="mb-10">Our History</h1>
+        <p>
+            In the year 1929, when the world was on the brink of a great depression that was about to unfold, a small town in the South of India saw a visionary who opened the door to a lucky future for his hometown. With a dream of providing quality products and services, he worked hard to open a small retail store selling FMCG (Fast-Moving Consumer Goods) to the local community.
+        </p>
+        <p>
+            As years passed, the business grew and prospered, adapting to the changing times and markets, each generation of the Sahib family carrying forward their great-grandfather's values and legacy with pride, adding their own innovations to the enterprise. Today, Sahibs Trading & Services Company is a well-established and renowned company, with a glorious heritage spanning across generations with diversified operations, operating in the GCC (Gulf Cooperation Council) region, covering Saudi Arabia, the UAE, and Qatar.
+        </p>
+        <p>
+            As the fourth generation of the Sahib family, we are committed to marching forward till the end of the horizon, upholding the core values of our enterprise: Legacy, Quality, Innovation, and Customer-Centricity.
+        </p>
+        
+<!-- Mission, Vision, and Quality Boxes -->
+<div class="row justify-content-center mt-5">
+    <div class="col-md-4 mb-4">
+        <div class="box vision-box">
+            <h2>Our Mission</h2>
+            <p>
+                Our current endeavours involve the passionate pursuit of our vision of establishing a strong foothold in the GCC market, particularly in the flourishing economies of Saudi Arabia, the UAE, and Qatar.
+            </p>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="box mission-box">
+            <h2>Core Values</h2>
+            <p>
+                At Sahibs, we are driven by the hallmarks of our existence, a touch of which is reflected in everything we do. With the glory of legacy carved along the roots, we aspire to supply our community with nothing less than the best.
+            </p>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="box quality-box">
+            <h2>Our Quality</h2>
+            <p>
+                From tip to toe, we handle every order with care and accuracy, delivering goods and services of peak quality on time. We source our products from reliable and ethical suppliers, ensuring that they meet the highest standards of safety and quality.
+            </p>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Contact Us Section -->
+<div id="contact-section" class="container-fluid py-5 d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="content-wrapper text-center">
+        <h1 class="text-center mb-4">Contact Us</h1>
+        <div class="row">
+            <form action="/submit_form" method="post">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+
 <!-- Footer -->
-<footer class="footer bg-dark text-light">
+<footer class="footer bg-dark text-light py-3">
     <div class="container text-center">
         <p>&copy; 2024 Sahibs - Since 1929</p>
         <p>Get in Touch: <a href="mailto:info@sahibstradr.com" class="text-light">info@sahibstradr.com</a></p>
@@ -84,8 +194,8 @@
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
-        document.body.classList.add('fade-out-loader'); // Add fade-out effect after 3 seconds
-    }, 3000); // 3000 milliseconds = 3 seconds
+        document.body.classList.add('fade-out-loader'); // Add fade-out effect after 1 second
+    }, 1000);
 });
 </script>
 
