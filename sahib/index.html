@@ -27,10 +27,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-        <!-- Replace Navbar text with an icon -->
-        <a class="navbar-brand" href="#">
-            <img src="logo1.png" alt="Logo Icon" class="navbar-logo" style="height: 40px;"> <!-- Your icon -->
-        </a>
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -49,10 +46,6 @@
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
-            <form class="d-flex">
-                <input class="form-control search-bar" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn search-button ms-2" type="submit"><i class="bi bi-search"></i></button>
-            </form>
         </div>
     </div>
 </nav>
@@ -73,49 +66,162 @@
     </ul>
 </div>
 
-<!-- Product Section -->
+
+
+
+<!-- Our Products Section -->
 <section id="product-section" class="text-center bg-light">
+    <h2 class="section-title"><b>Our Products</b></h2>
     <div class="container">
-        <h2 class="section-title"><b>Our Products</b></h2>
-        <div class="row">
-            <!-- Product 1 -->
-            <div class="col-md-4 product-item">
-                <div class="product-img">
-                    <img src="p1.jpg" alt="Jeerakasala Rice"> <!-- Replace with your image path -->
+        <!-- Rice Products Container -->
+        <div id="rice-container">
+            <h2 class="section-title"><b>Rice</b></h2>
+            <div class="row">
+                <!-- Rice Product 1 -->
+                <div class="col-md-3 product-item">
+                    <div class="product-img">
+                        <img src="p1.jpg" alt="Jeerakasala Rice">
+                    </div>
+                    <h3 class="product-name"><b>Jeerakasala Rice</b></h3>
+                    <p class="product-price">$99.99</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
                 </div>
-                <h3 class="product-name"><b>Jeerakasala Rice</b></h3>
-                <p class="product-description">It is a fantastic product that meets all your needs.</p>
-                <p class="product-price">$99.99</p>
-                <a href="#" class="btn btn-primary">Buy Now</a>
-            </div>
-            <!-- Product 2 -->
-            <div class="col-md-4 product-item">
-                <div class="product-img">
-                    <img src="p2.jpg" alt="Product 2"> <!-- Replace with your image path -->
+                <!-- Rice Product 2 -->
+                <div class="col-md-3 product-item">
+                    <div class="product-img">
+                        <img src="p1.jpg" alt="Product 2">
+                    </div>
+                    <h3 class="product-name"><b>Product 2</b></h3>
+                    <p class="product-price">$149.99</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
                 </div>
-                <h3 class="product-name"><b>Product 2</b></h3>
-                <p class="product-description">Description of Product 2. This product is top-rated and highly recommended.</p>
-                <p class="product-price">$149.99</p>
-                <a href="#" class="btn btn-primary">Buy Now</a>
-            </div>
-            <!-- Product 3 -->
-            <div class="col-md-4 product-item">
-                <div class="product-img">
-                    <img src="p3.jpg" alt="Product 3"> <!-- Replace with your image path -->
+                <!-- Rice Product 3 -->
+                <div class="col-md-3 product-item">
+                    <div class="product-img">
+                        <img src="p1.jpg" alt="Product 3">
+                    </div>
+                    <h3 class="product-name"><b>Product 3</b></h3>
+                    <p class="product-price">$79.99</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
                 </div>
-                <h3 class="product-name"><b>Product 3</b></h3>
-                <p class="product-description">Description of Product 3. A great choice for those looking for quality and affordability.</p>
-                <p class="product-price">$79.99</p>
-                <a href="#" class="btn btn-primary">Buy Now</a>
+                <!-- Rice Product 4 (New) -->
+                <div class="col-md-3 product-item">
+                    <div class="product-img">
+                        <img src="p1.jpg" alt="Product 4">
+                    </div>
+                    <h3 class="product-name"><b>Product 4</b></h3>
+                    <p class="product-price">$89.99</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
             </div>
         </div>
+        
+<!-- Spices Products Container (Carousel) -->
+<div id="spices-container" class="mt-5">
+    <h2 class="section-title"><b>Spices</b></h2>
+    <div id="spicesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"> <!-- Added data-bs-interval for auto sliding -->
+        <div class="carousel-inner">
+            <!-- Spices Carousel Item 1 -->
+            <div class="carousel-item active">
+                <div class="row">
+                    <!-- Spice Product 1 -->
+                    <div class="col-md-3 product-item">
+                        <div class="product-img">
+                            <img src="p4.jpg" alt="Spice 1">
+                        </div>
+                        <h3 class="product-name"><b>Spice Product 1</b></h3>
+                        <p class="product-price">$19.99</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                    <!-- Spice Product 2 -->
+                    <div class="col-md-3 product-item">
+                        <div class="product-img">
+                            <img src="p2.png" alt="Spice 2">
+                        </div>
+                        <h3 class="product-name"><b>Spice Product 2</b></h3>
+                        <p class="product-price">$24.99</p>
+                        <a href="p2.png" class="btn btn-primary">Buy Now</a>
+                    </div>
+                    <!-- Spice Product 3 -->
+                    <div class="col-md-3 product-item">
+                        <div class="product-img">
+                            <img src="p4.jpg" alt="Spice 3">
+                        </div>
+                        <h3 class="product-name"><b>Spice Product 3</b></h3>
+                        <p class="product-price">$29.99</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                    <!-- Spice Product 4 -->
+                    <div class="col-md-3 product-item">
+                        <div class="product-img">
+                            <img src="p2.png" alt="Spice 4">
+                        </div>
+                        <h3 class="product-name"><b>Spice Product 4</b></h3>
+                        <p class="product-price">$29.99</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Spices Carousel Item 2 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <!-- Spice Product 1 -->
+                    <div class="col-md-3 product-item">
+                        <div class="product-img">
+                            <img src="p3.webp" alt="Spice 1">
+                        </div>
+                        <h3 class="product-name"><b>Spice Product 1</b></h3>
+                        <p class="product-price">$19.99</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                    <!-- Spice Product 2 -->
+                    <div class="col-md-3 product-item">
+                        <div class="product-img">
+                            <img src="p2.png" alt="Spice 2">
+                        </div>
+                        <h3 class="product-name"><b>Spice Product 2</b></h3>
+                        <p class="product-price">$24.99</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                    <!-- Spice Product 3 -->
+                    <div class="col-md-3 product-item">
+                        <div class="product-img">
+                            <img src="p3.webp" alt="Spice 3">
+                        </div>
+                        <h3 class="product-name"><b>Spice Product 3</b></h3>
+                        <p class="product-price">$29.99</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                    <!-- Spice Product 4 -->
+                    <div class="col-md-3 product-item">
+                        <div class="product-img">
+                            <img src="p4.jpg" alt="Spice 4">
+                        </div>
+                        <h3 class="product-name"><b>Spice Product 4</b></h3>
+                        <p class="product-price">$29.99</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#spicesCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#spicesCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+</div>
+
     </div>
 </section>
 
 <!-- About Us Section -->
 <div id="about-section" class="container-fluid py-5 d-flex flex-column align-items-center">
     <div class="content-wrapper text-center">
-        <h1 class="mb-10">Our History</h1>
+        <h2 class="mb-10">Our History</h2>
         <p>
             In the year 1929, when the world was on the brink of a great depression that was about to unfold, a small town in the South of India saw a visionary who opened the door to a lucky future for his hometown. With a dream of providing quality products and services, he worked hard to open a small retail store selling FMCG (Fast-Moving Consumer Goods) to the local community.
         </p>
@@ -157,30 +263,28 @@
         </div>
     </div>
 </div>
-
-<!-- Contact Us Section -->
-<div id="contact-section" class="container-fluid py-5 d-flex justify-content-center align-items-center" style="min-height: 80vh;">
-    <div class="content-wrapper text-center">
-        <h1 class="text-center mb-4">Contact Us</h1>
-        <div class="row">
-            <form action="/submit_form" method="post">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name:</label>
-                    <input type="text" id="name" name="name" class="form-control" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="email" id="email" name="email" class="form-control" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message:</label>
-                    <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </form>
-        </div>
+<!-- Contact Section -->
+<section id="contact-section" class="container-fluid py-5 d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="content-wrapper text-center" style="width: 500px;">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <p>If you have any questions, feel free to contact us through the form below.</p>
+        <form action="" method="post">
+            <div class="mb-3">
+                <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
+            </div>
+            <div class="mb-3">
+                <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone Number">
+            </div>
+            <div class="mb-3">
+                <textarea id="message" name="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
     </div>
-</div>
+</section>
 
 <!-- Footer -->
 <footer class="footer bg-dark text-light py-3">

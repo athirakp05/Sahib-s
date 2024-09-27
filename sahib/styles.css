@@ -5,14 +5,19 @@ body, html {
     height: 100%;
     font-family: 'EB Garamond', Garamond, serif; /* Garamond as the primary font */
 }
-
+h2
+{
+font-weight: bold;
+}
 /* Background Image for Landing Page */
 .background-image {
     background-image: url('bg2.png'); /* Replace with your image path */
     background-size: cover; /* Cover the entire viewport */
     background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh; /* Full height for landing page */
+    background-position: center center;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
 }
 
 /* About Us Section Background */
@@ -25,12 +30,12 @@ body, html {
     color: black; /* Font color for readability */
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(38, 36, 36, 0.514);
 }
 
 /* Contact Us Section Background */
 #contact-section {
-    background-image: url('bg2.png'); /* Replace with your contact section image path */
+    background-image: url('about.jpg'); /* Replace with your contact section image path */
     background-size: cover; /* Cover the entire section */
     background-position: center;
     background-repeat: no-repeat;
@@ -38,7 +43,7 @@ body, html {
     color: black; /* Font color for readability */
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(38, 36, 36, 0.514);
 }
 
 
@@ -49,11 +54,12 @@ body, html {
     top: 0;
     z-index: 1000;
     width: 100%;
-    background-color: rgba(147, 24, 26, 0.379); /* Semi-transparent background */
+    background-color: #90141e00; /* Semi-transparent background */
 }
 
 .navbar a {
-    color: rgba(255, 255, 255, 0.838) !important;
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold;
     font-family: 'EB Garamond', Garamond, serif; /* Garamond in the navbar */
 }
 
@@ -67,30 +73,30 @@ body, html {
 
 /* Navbar hover effect */
 .navbar-nav .nav-link {
+    background-color: #870e18df; /* Semi-transparent background */
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .navbar-nav .nav-link:hover {
     color: #06AEE8; /* Change to your preferred hover color */
-    background-color: rgba(6, 174, 232, 0.1); /* Optional: light background color */
+    background-color: rgba(128, 14, 14, 0.997);
 }
 
-/* Product item hover effect */
-.product-item {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+/* Button Styles */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
 }
 
-.product-item:hover {
-    transform: scale(1.05); /* Slightly scale up the product item */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+.btn-primary:hover {
+    background-color: #0056b3;
 }
-
-/* Optional: change button color on hover */
-.product-item .btn:hover {
-    background-color: #05A8DC; /* Change to your preferred button hover color */
-    border-color: #05A8DC;
-}
-
 /* Logo Container */
 .logo-container {
     display: flex;
@@ -113,6 +119,45 @@ body, html {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+/* Need More Help Section Styles */
+#help-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#help-section p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.help-box {
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    transition: transform 0.3s ease-in-out;
+}
+
+.help-box:hover {
+    transform: translateY(-10px); /* Lift the box slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Add deeper shadow on hover */
+}
+
+.help-box i {
+    font-size: 2rem;
+    color: #0b9bcb; /* Icon color */
+}
+
+.help-box h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.help-box p {
+    color: #555; /* Text color */
+}
+
 /* Utility Classes */
 .text-center {
     text-align: center;
@@ -137,7 +182,7 @@ body, html {
 
 /* Footer Styles */
 .footer {
-    background-image: url('about.jpg');
+    color: #232323cc; /* Light text color for contrast */
     padding: 20px 0;
     position: relative;
     bottom: 0;
@@ -147,7 +192,7 @@ body, html {
 
 .footer p {
     margin: 0;
-    color: #02070c6f; /* Light text color for contrast */
+    color: #eaebecc6; /* Light text color for contrast */
 }
 
 .footer a:hover {
@@ -161,7 +206,7 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(119, 22, 22, 0.801); /* Semi-transparent background */
+    background-color: rgba(119, 22, 22, 0.74); /* Semi-transparent background */
     z-index: 9999; /* Keep it above other elements */
     display: flex;
     justify-content: center;
@@ -237,7 +282,7 @@ body.fade-out-loader #loader {
 
 .vertical-social-icons ul li a {
     font-size: 20px; /* Size of social media icons */
-    color: #F0F8FF; /* Light color for icons */
+    color: #9d9a9a; /* Light color for icons */
     text-decoration: none;
     display: block;
     transition: color 0.3s;
@@ -265,7 +310,7 @@ body.fade-out-loader #loader {
 /* Hover effect */
 .box:hover {
     transform: translateY(-10px); /* Slightly lift the box */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    box-shadow: 0 4px 8px rgba(38, 36, 36, 0.514);
 }
 
 /* Additional styling for different boxes if needed */
@@ -283,44 +328,48 @@ body.fade-out-loader #loader {
 
 /* Product Section Styles */
 #product-section {
-    background-image: url('about.jpg');
+    background-image: url('about.jpg'); /* Background image for the section */
+    background-size: cover;
+    background-position: center;
     padding: 50px 0;
 }
-
 .section-title {
-    font-size: 2rem;
-    margin-bottom: 30px;
+    font-size: 2rem; /* Font size for section titles */
+    margin-bottom: 2rem;
 }
-
 .product-item {
-    background-image: url('about.jpg');
+    background-image: url('about.jpg'); /* Background image for the section */
     border-radius: 10px; /* Rounded corners */
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.229); /* Shadow for product items */
-    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(38, 36, 36, 0.514);
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 250px;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.product-item:hover {
+    transform: scale(1.05); /* Slightly scale up */
+    box-shadow: 0 4px 8px rgba(38, 36, 36, 0.514);
+}
 .product-img img {
-    max-width: 70%;
+    max-width: 100%;
+    height: auto;
     border-radius: 5px;
 }
-
 .product-name {
-    font-size: 1.5rem;
-    margin: 15px 0;
+    font-size: 1.25rem;
+    margin: 10px 0;
 }
-
-.product-description {
-    color: #555; /* Gray color for description */
-}
-
 .product-price {
     font-size: 1.25rem;
-    color: #333; /* Darker color for price */
-    margin: 15px 0;
+    color: #333;
+    margin: 10px 0;
 }
-
 .btn-primary {
-    background-color: #0b9bcb; /* Adjust as per your theme color */
-    border-color: #0b9bcb; /* Button border color */
+    background-color: #007bff;
+    border: none;
+    color: #fff;
 }
